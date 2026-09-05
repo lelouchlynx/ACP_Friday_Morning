@@ -11,7 +11,6 @@ class AirConditioner:
         self._temperature = temperature
         self.mode = mode
         self.fan_speed = fan_speed
-        self._is_energy_saving = temperature >= 25
 
     @property
     def temperature(self):
@@ -45,7 +44,7 @@ class AirConditioner:
 
     @property
     def is_energy_saving(self):
-        return self._is_energy_saving
+        return self._temperature >= 25
 
     def turn_on(self):
         self.is_on = True

@@ -1,0 +1,14 @@
+Error Check 1
+First error was a typo error in line 65
+self.fan does not exist, it should be self.fan_speed 
+
+Error Check 2
+second error was found in line 25, a simple error of self.temperature = value, without the _ which caused recursion error
+endlessly looping with calling function
+
+Error Check 3
+removed the _is_energy_saving in __init_ line 14 and changed line 38 so it is no longer static and calling an old variabl   
+
+Error Check 4
+  
+ 

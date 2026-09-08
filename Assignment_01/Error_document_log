@@ -10,5 +10,10 @@ Error Check 3
 removed the _is_energy_saving in __init_ line 14 and changed line 38 so it is no longer static and calling an old variabl   
 
 Error Check 4
-  
+in line 21, it was said with if the numver is smaller than 16 AND bigger than 30 at the same time which is impossible to happen,changing "and" to "or" fixes it.
+
+Error Check 5
+the default values and __init__ function was not working as inteded. not needed underscore was in self.temperature so removing it made
  
+ Error Check 6
+ there was no guardrails in function cooler and warmer, added a guardrail so it cant be lower than min and higher thann max

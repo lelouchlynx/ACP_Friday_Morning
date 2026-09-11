@@ -20,7 +20,7 @@ class AirConditioner:
     def temperature(self, value):
         if value < self.MIN_TEMP or value > self.MAX_TEMP:
             raise ValueError(f"Temperature must be {self.MIN_TEMP}-{self.MAX_TEMP} C.")
-        self.temperature = value
+        self._temperature = value
 
     @property
     def mode(self):
